@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* display: flex; */
+    height: 550px;
+    width: 300px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 20px
+}
+.container img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+}
+.content p{
+    text-align: center;
+    padding-top: 12px;
+}
+.plan{
+    display: flex;
+    background-color:lightblue;
+    width: 270px;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.planico{
+
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 4px;
+}
+.chotaplan{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+    /* margin: 10px; */
+}
+.buttons button{
+    /* padding: 10px; */
+    margin: 20px;
+}
+#proceed{
+    width: 250px;
+    height:50px;
+    background-color: rgb(26, 26, 66);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.cancelbut a{
+    text-decoration: none;
+    color: rgb(46, 43, 43);
+    font-weight: bold;
+
+}
