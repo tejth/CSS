@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+    padding: 4px;
+    border: 2px solid white;
+}
+.item{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+}

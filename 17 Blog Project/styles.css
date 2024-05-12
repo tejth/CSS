@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 80vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+a{
+    text-decoration: none;
+
+}
+.headercontainer{
+    margin-bottom: 2.8rem;
+}
+.headertitle{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+.headerdescription{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+
+.maincontainer{
+    display: grid;
+    gap: 1.5rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(350px,400px));
+    justify-content: center;
+}
+
+
+/* @media(min-width:650px){
+    .maincontainer{
+        grid-template-columns: repeat(2,1fr);
+     }
+}
+
+@media(min-width:1080px){
+    .maincontainer{
+        grid-template-columns: repeat(3,1fr);
+     }
+}
+
+@media(min-width:1250px){
+    .maincontainer{
+        grid-template-columns: repeat(4,1fr);
+     }
+}
+ */
+
+
+.cardcontainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(1111, 109, 109);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cardimagecontainer{
+  position: relative;
+  overflow: hidden;
+  height: 6rem;
+
+}
+
+@media (min-width:768px){
+    .cardimagecontainer{
+        position: relative;
+        overflow: hidden;
+        height: 12rem;
+      
+      }
+      
+
+}
+.cardimage{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cardtitlecontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.cardcontainer:hover .cardimage{
+    transform: scale(1.1);
+    transition-duration:  200ms;
+}
+.cardtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgb(25, 23, 23);
+    margin-bottom: 0.3rem;
+}
+.cardtitleanchor:hover .cardtitle{
+    color: blue;
+}
+.cardbody{
+    color: 113,107,107;
+    font-size: 1rem;
+}
+.cardfootercontainer{
+    display: flex;
+    justify-content: space-between;
+    padding:0  1.5rem;
+    padding-bottom: 1.5rem;
+}
+.authorcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+}
+.authoravtarcontainer{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(167, 159, 159);
+}
+
+.authorinfocontainer{
+
+    display: flex;
+    flex-direction: column;
+}
+.authorname{
+    color: blue;
+}
+.authordate{
+    color: rgb(136, 126, 126);
+}
+
+.cardtagcontainer{
+    display: flex;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+    align-items: end;
+    /* margin-top: 8rem; */
+}
