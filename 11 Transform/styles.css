@@ -1,0 +1,28 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 2s linear 1s;
+}
+.container{
+    height: 100vw;
+    width: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    transform: rotate(45deg); /* negative values can also be used to rotate opposite side/*
+    /* transform: scale(2);  increase size */
+    /* transform: skew(20deg); will tilt the box */
+    /* transform: translate(500px 500px);  the box will move 500px in x direction and 500px in y direction */
+
+}
+p{
+    font-size: 36px;
+}

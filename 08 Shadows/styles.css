@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --custom-width: 330px;
+}
+.container{
+    background-color: beige;
+    border: 2px solid black;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    padding: 4px;
+}
+.box{
+    --primary_color: aqua;
+    background-color: var(--primary_color);
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    box-shadow: 10px 15px 5px 50px grey
+}
+

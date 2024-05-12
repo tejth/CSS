@@ -1,0 +1,34 @@
+.container{
+    background-color: beige;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    height: 500px;
+    display: flex;
+    align-items: start;
+    
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+}
+.box{
+    border: 2px solid brown;
+    margin: 2px;
+    padding: 2px;
+}
+#box1{
+   background-color: aqua; 
+   align-self: center;
+}
+#box2{
+    background-color: aquamarine;
+}
+#box3{
+    background-color: blueviolet;
+}
+#box4{
+    background-color: blue;
+}
+
+
+/* //bydefault flex direction is row */

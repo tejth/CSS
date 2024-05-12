@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    border: 5px solid black;
+}
+.box{
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid yellow;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 4s ;  /*time taken by an animation to complete one cycle */
+    animation-iteration-count: infinite; /*number of time an animation cycle must play*/
+    animation-delay: 1s; /* after how much time animation must start*/
+    /* animation-timing-function: ease-in; start slow, fast ending */
+    /* animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1); */
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards;animation will stop after reaching at end */
+}
+.box2{
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid yellow;
+    position: relative;
+    animation-name: movement2;
+    animation-duration: 3s ; 
+    animation-iteration-count: infinite; 
+    animation-delay: 1s; 
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.circle{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border: 3px solid yellow;
+        border-radius: 50px;
+        margin: 10px;
+        position: relative;
+        top: 30%;
+        left: 40%;
+        animation: 9s ease-in-out 0s infinite alternate-reverse none running circlemovement;
+}
+
+@keyframes rightMovement {
+    from{
+        top: 22px;
+        left: 0;
+    }
+    to{
+        top:22px;
+        left: 900px;
+    }
+    
+}
+
+
+@keyframes movement2 {
+    from{
+        top: 380px;
+        left: 900px;
+    }
+    to{
+        top:380px;
+        left: 0px;
+    }
+    
+}
+
+@keyframes circlemovement {
+    0%{
+        top:1%;
+        left: 5%;
+    }
+    30%{
+        top: 9%;
+        left: 90%;
+    }
+    60%{
+        top: 67%;
+        left: 10%;
+    }
+    100%{
+        top: 20%;
+        left: 90%;
+    }
+    
+}
