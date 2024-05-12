@@ -1,0 +1,23 @@
+p{
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif; /*Fallback system */
+    font-weight: 600;
+    line-height: 30px;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+#para1{
+    background-color: yellow;
+}
+#para2{
+    background-color: rgb(100, 109, 345,50); /*Fourth value is optional which denotes transparency.*/
+}
+#para3{
+    background-color: #ffab23;
+}
+#para4{
+   background-color:  hsl(0,100%,50%);
+}
